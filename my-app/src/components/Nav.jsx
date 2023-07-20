@@ -24,7 +24,7 @@ function Nav() {
         <nav className="navbar navbar-expand navbar-dark bg-dark">
             <div className="navbar-nav">
                 <NavLink href="/" exact className="nav-item nav-link">主页</NavLink>
-                {/*<NavLink href="/users" className="nav-item nav-link">Users</NavLink>*/}
+                <NavLink href="/bilibili" className="nav-item nav-link">直播数据</NavLink>
                 {/*<a onClick={logout} className="nav-item nav-link">Logout</a>*/}
             </div>
         </nav>
