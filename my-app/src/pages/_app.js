@@ -53,10 +53,11 @@ function App({ Component, pageProps }) {
     return (
         <>
             <Head>
-                <title>Next.js 11 - User Registration and Login Example</title>
+                <title>秋蒂社区</title>
                 
                 {/* eslint-disable-next-line @next/next/no-css-tags */}
                 <link href="//netdna.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+                <link type="image/x-icon" href="static/favicon.ico" rel="shortcut icon"  />
             </Head>
 
             <div className={`app-container ${user ? 'bg-light' : ''}`}>
@@ -69,12 +70,10 @@ function App({ Component, pageProps }) {
 
             {/* credits */}
             <div className="text-center mt-4">
-                <p>
-                    <a href="https://jasonwatmore.com/post/2021/08/19/next-js-11-user-registration-and-login-tutorial-with-example-app" target="_top">Next.js 11 - User Registration and Login Tutorial with Example App</a>
-                </p>
-                <p>
-                    <a href="https://jasonwatmore.com" target="_top">JasonWatmore.com</a>
-                </p>
+
+                {/*<p>*/}
+                {/*    <a href="https://space.bilibili.com/455899334" target="_top">秋蒂B站主页</a>*/}
+                {/*</p>*/}
             </div>
         </>
     );

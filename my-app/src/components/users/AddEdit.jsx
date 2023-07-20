@@ -15,9 +15,9 @@ function AddEdit(props) {
     
     // form validation rules 
     const validationSchema = Yup.object().shape({
-        firstName: Yup.string()
+        nickName: Yup.string()
             .required('First Name is required'),
-        lastName: Yup.string()
+        qq: Yup.string()
             .required('Last Name is required'),
         username: Yup.string()
             .required('Username is required'),
@@ -66,13 +66,13 @@ function AddEdit(props) {
             <div className="form-row">
                 <div className="form-group col">
                     <label>First Name</label>
-                    <input name="firstName" type="text" {...register('firstName')} className={`form-control ${errors.firstName ? 'is-invalid' : ''}`} />
-                    <div className="invalid-feedback">{errors.firstName?.message}</div>
+                    <input name="nickName" type="text" {...register('nickName')} className={`form-control ${errors.nickName ? 'is-invalid' : ''}`} />
+                    <div className="invalid-feedback">{errors.nickName?.message}</div>
                 </div>
                 <div className="form-group col">
                     <label>Last Name</label>
-                    <input name="lastName" type="text" {...register('lastName')} className={`form-control ${errors.lastName ? 'is-invalid' : ''}`} />
-                    <div className="invalid-feedback">{errors.lastName?.message}</div>
+                    <input name="qq" type="text" {...register('qq')} className={`form-control ${errors.qq ? 'is-invalid' : ''}`} />
+                    <div className="invalid-feedback">{errors.qq?.message}</div>
                 </div>
             </div>
             <div className="form-row">

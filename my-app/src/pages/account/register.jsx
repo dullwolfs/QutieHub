@@ -14,9 +14,9 @@ function Register() {
 
     // form validation rules 
     const validationSchema = Yup.object().shape({
-        firstName: Yup.string()
+        nickName: Yup.string()
             .required('First Name is required'),
-        lastName: Yup.string()
+        qq: Yup.string()
             .required('Last Name is required'),
         username: Yup.string()
             .required('Username is required'),
@@ -42,34 +42,34 @@ function Register() {
     return (
         <Layout>
             <div className="card">
-                <h4 className="card-header">Register</h4>
+                <h4 className="card-header">注册</h4>
                 <div className="card-body">
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <div className="form-group">
-                            <label>First Name</label>
-                            <input name="firstName" type="text" {...register('firstName')} className={`form-control ${errors.firstName ? 'is-invalid' : ''}`} />
-                            <div className="invalid-feedback">{errors.firstName?.message}</div>
+                            <label>昵称</label>
+                            <input name="nickName" type="text" {...register('nickName')} className={`form-control ${errors.nickName ? 'is-invalid' : ''}`} />
+                            <div className="invalid-feedback">{errors.nickName?.message}</div>
                         </div>
                         <div className="form-group">
-                            <label>Last Name</label>
-                            <input name="lastName" type="text" {...register('lastName')} className={`form-control ${errors.lastName ? 'is-invalid' : ''}`} />
-                            <div className="invalid-feedback">{errors.lastName?.message}</div>
+                            <label>QQ</label>
+                            <input name="qq" type="text" {...register('qq')} className={`form-control ${errors.qq ? 'is-invalid' : ''}`} />
+                            <div className="invalid-feedback">{errors.qq?.message}</div>
                         </div>
                         <div className="form-group">
-                            <label>Username</label>
+                            <label>账号</label>
                             <input name="username" type="text" {...register('username')} className={`form-control ${errors.username ? 'is-invalid' : ''}`} />
                             <div className="invalid-feedback">{errors.username?.message}</div>
                         </div>
                         <div className="form-group">
-                            <label>Password</label>
+                            <label>密码</label>
                             <input name="password" type="password" {...register('password')} className={`form-control ${errors.password ? 'is-invalid' : ''}`} />
                             <div className="invalid-feedback">{errors.password?.message}</div>
                         </div>
                         <button disabled={formState.isSubmitting} className="btn btn-primary">
                             {formState.isSubmitting && <span className="spinner-border spinner-border-sm mr-1"></span>}
-                            Register
+                            提交
                         </button>
-                        <Link href="/account/login" className="btn btn-link">Cancel</Link>
+                        <Link href="/account/login" className="btn btn-link">取消</Link>
                     </form>
                 </div>
             </div>
