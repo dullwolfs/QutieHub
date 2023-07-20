@@ -57,7 +57,7 @@ function App({ Component, pageProps }) {
                 
                 {/* eslint-disable-next-line @next/next/no-css-tags */}
                 <link href="//netdna.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
-                <link type="image/x-icon" href="static/favicon.ico" rel="shortcut icon"  />
+                <link type="image/x-icon" href="static/app_128.ico" rel="shortcut icon"  />
             </Head>
 
             <div className={`app-container ${user ? 'bg-light' : ''}`}>
