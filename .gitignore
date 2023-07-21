@@ -3,3 +3,7 @@
 
 # VsCode配置文件
 .vscode/
+
+my-app/node_modules
+my-app/src/package-lock.json
+my-app/src/next.config.js
