@@ -60,7 +60,7 @@ function App({ Component, pageProps }) {
                 <link type="image/x-icon" href="static/app_128.ico" rel="shortcut icon"  />
             </Head>
 
-            <div className={`app-container ${user ? 'bg-light' : ''}`}>
+            <div className={`app-container ${user ? '' : ''}`}>
                 <Nav />
                 <Alert />
                 {authorized &&
